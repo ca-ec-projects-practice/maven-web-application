@@ -15,6 +15,7 @@ node{
     {
         sh "${mavenHome}/bin/mvn clean package"
     }
+    /*
     stage('SonarQubeReport'){
         sh "${mavenHome}/bin/mvn clean sonar:sonar"
     }
@@ -28,6 +29,7 @@ node{
 
     }
     }
+    */
     stage('sendEmailNotification'){
         emailext body: '''Build is over!!
 
