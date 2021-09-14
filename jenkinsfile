@@ -9,7 +9,7 @@ node{
        echo "JOB Name ${env.JOB_NAME}"
     stage('CheckOutCode')
     {
-    git branch: 'development', credentialsId: 'f7b13b02-b580-4572-b08a-879d546535ca', url: 'https://github.com/ca-ec-projects-practice/maven-web-application.git'
+    git branch: 'master', credentialsId: 'f7b13b02-b580-4572-b08a-879d546535ca', url: 'https://github.com/ca-ec-projects-practice/maven-web-application.git'
     }
     stage('Build')
     {
